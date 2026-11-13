@@ -36,7 +36,6 @@ Website memiliki dua jenis pengguna:
 ## 4. Pembagian Fitur per Anggota
 
 ### Modul 1 - Autentikasi dan Penghuni
-Penanggung jawab: **Felix Sanders Herman's M**
 
 - Login dan logout
 - Middleware pembatasan halaman berdasarkan role admin dan penghuni
@@ -47,7 +46,6 @@ Penanggung jawab: **Felix Sanders Herman's M**
 - Laporan jumlah penghuni aktif dan nonaktif serta daftar penghuni per kamar
 
 ### Modul 2 - Kamar dan Dashboard
-Penanggung jawab: **Mohamad Arya Fahreza H.**
 
 - CRUD data kamar: nomor, tipe, harga per bulan, kapasitas, fasilitas, dan foto
 - Pengelolaan status kamar: kosong, terisi, dan perbaikan
@@ -56,7 +54,6 @@ Penanggung jawab: **Mohamad Arya Fahreza H.**
 - Laporan kondisi kamar: tingkat hunian dan daftar kamar per status
 
 ### Modul 3 - Pembayaran
-Penanggung jawab: **Jahrul Qoiq Assyafi'i**
 
 - CRUD tagihan sewa per penghuni berdasarkan periode bulan dan tahun
 - Pencatatan pembayaran: tanggal, metode tunai atau transfer, dan unggah bukti bayar
@@ -66,7 +63,6 @@ Penanggung jawab: **Jahrul Qoiq Assyafi'i**
 - Laporan pembayaran: filter bulan dan tahun, total pemasukan, daftar penghuni menunggak, serta opsi cetak atau ekspor PDF
 
 ### Modul 4 - Pengaduan
-Penanggung jawab: **Firdhan Andhika**
 
 - Penghuni mengajukan pengaduan dengan judul, kategori, deskripsi, dan foto
 - Kategori pengaduan meliputi listrik, air, Wi-Fi, kamar mandi, dan lainnya
@@ -77,4 +73,4 @@ Penanggung jawab: **Firdhan Andhika**
 
 ---
 
-Kelompok 6 | Program Studi Informatika | Fakultas Ilmu Komputer | Universitas Jember
+Kelompok 6
