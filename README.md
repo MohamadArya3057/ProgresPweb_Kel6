@@ -1,58 +1,80 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# FauzanKos
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Sistem Informasi Manajemen Kos Fauzan Hostel Berbasis Website**
 
-## About Laravel
+Project akhir mata kuliah Pemrograman Berbasis Website, Program Studi Informatika, Fakultas Ilmu Komputer, Universitas Jember. Dikerjakan oleh **Kelompok 6**.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 1. Fungsi Website
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+FauzanKos adalah aplikasi web untuk membantu pengelolaan operasional Kos Fauzan Hostel secara digital, meliputi pengelolaan data kamar, data penghuni, pembayaran sewa, dan pengaduan fasilitas kos.
 
-## Learning Laravel
+Website memiliki dua jenis pengguna:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+| Pengguna | Hak akses |
+|---|---|
+| **Admin** (pemilik/pengelola kos) | Mengelola data kamar, penghuni, pembayaran, dan pengaduan, serta melihat dashboard dan laporan |
+| **Penghuni** | Melihat informasi kamar, memantau tagihan dan riwayat pembayaran, mengajukan pengaduan, dan memantau status pengaduan |
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 2. Teknologi
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+- Backend: Laravel
+- Database: MySQL
+- Frontend: Bootstrap 5, JavaScript, jQuery
+- Konsep yang dipakai: Routing, Middleware, Migration, Seeder, Eloquent ORM dan relationship, Form Request validation, Blade layout
 
-## Agentic Development
+## 3. Pembagian Modul per Anggota
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+| No | Nama | NIM | Modul |
+|---|---|---|---|
+| 1 | Felix Sanders Herman's M | 252410103066 | Modul 1 - Autentikasi dan Penghuni |
+| 2 | Mohamad Arya Fahreza H. | 242410103057 | Modul 2 - Kamar dan Dashboard |
+| 3 | Jahrul Qoiq Assyafi'i | 252410103086 | Modul 3 - Pembayaran |
+| 4 | Firdhan Andhika | 252410103065 | Modul 4 - Pengaduan |
 
-```bash
-composer require laravel/boost --dev
+## 4. Pembagian Fitur per Anggota
 
-php artisan boost:install
-```
+### Modul 1 - Autentikasi dan Penghuni
+Penanggung jawab: **Felix Sanders Herman's M**
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+- Login dan logout
+- Middleware pembatasan halaman berdasarkan role admin dan penghuni
+- CRUD data penghuni: nama, NIK, alamat asal, pekerjaan, kontak darurat, tanggal masuk, dan tanggal keluar
+- Penempatan penghuni ke kamar serta pengubahan status aktif/nonaktif
+- Penghuni melihat dan mengedit profil sendiri
+- Pencarian dan filter data penghuni
+- Laporan jumlah penghuni aktif dan nonaktif serta daftar penghuni per kamar
 
-## Contributing
+### Modul 2 - Kamar dan Dashboard
+Penanggung jawab: **Mohamad Arya Fahreza H.**
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- CRUD data kamar: nomor, tipe, harga per bulan, kapasitas, fasilitas, dan foto
+- Pengelolaan status kamar: kosong, terisi, dan perbaikan
+- Filter kamar berdasarkan status dan tipe
+- Dashboard admin: jumlah kamar per status, penghuni aktif, total pembayaran bulan ini, tagihan belum lunas, dan pengaduan yang belum selesai
+- Laporan kondisi kamar: tingkat hunian dan daftar kamar per status
 
-## Code of Conduct
+### Modul 3 - Pembayaran
+Penanggung jawab: **Jahrul Qoiq Assyafi'i**
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- CRUD tagihan sewa per penghuni berdasarkan periode bulan dan tahun
+- Pencatatan pembayaran: tanggal, metode tunai atau transfer, dan unggah bukti bayar
+- Status pembayaran: belum bayar, lunas, dan terlambat
+- Penghuni melihat tagihan dan riwayat pembayaran
+- Penanda tagihan yang melewati jatuh tempo
+- Laporan pembayaran: filter bulan dan tahun, total pemasukan, daftar penghuni menunggak, serta opsi cetak atau ekspor PDF
 
-## Security Vulnerabilities
+### Modul 4 - Pengaduan
+Penanggung jawab: **Firdhan Andhika**
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- Penghuni mengajukan pengaduan dengan judul, kategori, deskripsi, dan foto
+- Kategori pengaduan meliputi listrik, air, Wi-Fi, kamar mandi, dan lainnya
+- Penghuni memantau status pengaduan
+- Admin melihat seluruh pengaduan, memperbarui status (diajukan, diproses, selesai, ditolak), dan memberikan tanggapan
+- Filter pengaduan berdasarkan status dan kategori
+- Laporan jumlah pengaduan per status dan kategori serta waktu penyelesaian
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Kelompok 6 | Program Studi Informatika | Fakultas Ilmu Komputer | Universitas Jember
